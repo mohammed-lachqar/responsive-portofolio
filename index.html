@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHAMMED</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    
+</head>
+<body>
+    <!-- responsive navbar -->
+    <nav class="nav">
+        <h2 class="logo"><a onclick="homepage()">Mohammed</a></h2>
+        
+        <div class="navbar">
+            <ul class="desktop-bar">
+                <li class="mobile" onclick="homepage()"><a href="#"><span class="material-symbols-outlined ">home</span>  Home</a></li>
+                <li class="mobile" onclick="aboutpage()"><a href="#"><span class="material-symbols-outlined ">data_loss_prevention</span>  About</a></li>
+                <li class="mobile" onclick="projectpage()"><a href="#"><span class="material-symbols-outlined ">folder_code</span>  Projects</a></li>
+                <li class="mobile" onclick="skillspage()"><a href="#"><span class="material-symbols-outlined ">stylus</span>  Skills</a></li>
+                <li class="mobile" onclick="contactpage()"><a href="#"><span class="material-symbols-outlined ">chat</span>  Contact</a></li>
+                <span class="material-symbols-outlined menu " id="desktop" onclick="showmobileBar()">menu</span>
+             </ul>
+            <ul class="mobile-bar" >
+                <span class="material-symbols-outlined " onclick="hidemobileBar()">close</span>
+                <li onclick="homepage()"><a href="#"><span class="material-symbols-outlined  ">home</span>  Home</a></li>
+                <li onclick="aboutpage()"><a href="#"><span class="material-symbols-outlined ">data_loss_prevention</span>  About</a></li>
+                <li onclick="projectpage()"><a href="#"><span class="material-symbols-outlined ">folder_code</span>  Projects</a></li>
+                <li onclick="skillspage()"><a href="#"><span class="material-symbols-outlined ">stylus</span>  Skills</a></li>
+                <li onclick="contactpage()"><a href="#"><span class="material-symbols-outlined ">chat</span>  Contact</a></li>
+            </ul>
+            
+        </div>
+        
+        
+    </nav>
+     <!-- <p class="pagename"></p> -->
+    <main>
+        <section class="home" id="home">
+           <div class="home-content">
+            <h1>It's <span>MOHAMMED</span></h1>
+            <h3>I'm <span>Front-End devlopper</span></h3>
+                <p>>Lorem ipsum dolor, sit amet consectetur ,
+                 molestias iusto est exercitationem officiis? Deserunt minus delectus ea impedit optio
+                  recusandae ad modi exercitationem, sapiente debitis! Hic quaerat nisi tenetur quidem..</p>
+                  <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                  <div class="btn-grp">
+                    <a href="#" class="btn">Hire</a>
+                    <a onclick="contactpage()" class="btn">Contact</a>
+                  </div>
+           </div>
+           <div class="home-logo">
+            <img src="img/logo1.jpeg" alt="img">
+           </div>
+        
+        </section>
+        
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/logo2.jpeg" alt="img">
+            </div>
+            <div class="about-content">
+                <h2>About <span>Me</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Perferendis tempora, quod dignissimos perspiciatis necessitatibus 
+                     dolore quibusdam? Sed officia eveniet quidem, corporis sit unde saepe quod officiis
+                      recusandae explicabo repellendus 
+                    id expedita iure ratione aliquam harum error accusantium. Consequuntur, sunt voluptatibus!</p>
+                    <a href="#" class="btn">Read more</a>
+            </div>
+        </section>
+        
+        <section class="projects" id="projects">
+           <h2 class="hedding">My lasts prpjects</h2>
+           <div class="cards-box">
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <h4>to do list</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-solid fa-image-portrait"></i>
+                        <h4>responsive portofolio</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <h4>mini markt place</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>
+               
+                
+                
+           </div>
+        </section>
+        <section class="skills" id="skills">
+
+            <h2 class="hedding">My skills</h2>
+           <div class="cards-box">
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTMl:5</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>JavaScript</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-brands fa-python"></i>
+                        <h4>Python</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <i class="fa-brands fa-dart-lang"></i>
+                        <h4>Dart</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Soluta distinctio nesciunt
+                             cupiditate esse! Fuga facilis veniam saepe aliquam alias rem.</p>
+                    </div>
+                </div>       
+           </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+           <h2 class="hedding">contact</h2>
+           <form action="">
+                <div class="input-grp">
+                    <div class="input-box">
+                        <input type="text" placeholder="Fall name">
+                        <input type="email"placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="nomber" placeholder="Phone number">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="input-grp2">
+                    <textarea name="" id="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send message" class="btn">
+                    <input type="reset" value="Clear all" class="btn">
+                </div>
+           </form>
+
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p> &copy mohammed lachqar 2026: <em>all Rights reserved</em> </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
