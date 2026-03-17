@@ -94,6 +94,15 @@ body{
    .mobile {
         display: none ;
     }
+    .mobile-bar{
+        border-left: 2px solid #00ff51;
+        border-bottom: 2px solid #00ff51;
+        border-bottom-left-radius: 2rem;
+        padding :1rem 2rem;
+    }
+    .home{
+        flex-direction: column-reverse;
+    }
     .about{
         flex-direction: column;
     }
@@ -118,7 +127,7 @@ span{
     justify-content: space-between;
     align-items: center;
     gap:3rem;
-    flex-wrap: nowrap;
+
 }
 .home-content{
     display: flex;
@@ -139,10 +148,10 @@ span{
 .home-content p{
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
 }
 .home-logo img{
-    width: 32vw;
+    width: 38vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition:  0.4s ease-in-out;
